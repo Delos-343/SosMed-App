@@ -52,8 +52,17 @@ class _LoginPageState extends State<LoginPage> {
                   hintText: 'Email',
                   obscureText: false,
                 ),
+
+                SizedBox(height: 10),
             
                 // Password
+                MyTextField(
+                  controller: passwordTextController,
+                  hintText: 'Password',
+                  obscureText: true,
+                ),
+
+                SizedBox(height: 10),
             
                 // Sign In Btn
             
