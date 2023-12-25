@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sosmed_app/components/button.dart';
-import 'package:sosmed_app/components/text_field.dart';
+import '../components/button.dart';
+import '../components/text_field.dart';
 
 class LoginPage extends StatefulWidget {
 
