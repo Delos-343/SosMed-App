@@ -4,8 +4,12 @@ import '../components/text_field.dart';
 
 class LoginPage extends StatefulWidget {
 
+  final Function()? onTap;
 
-  const LoginPage({super.key});
+  const LoginPage({
+    super.key,
+    required this.onTap,
+  });
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -37,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
             
                 // Welcome Back Msg
                 Text(
-                  'Welcome Back, Broski!',
+                  'Welcome back, broski!',
                   style: TextStyle(
                     color: Colors.grey[700]
                   ),
@@ -85,7 +89,7 @@ class _LoginPageState extends State<LoginPage> {
                     const SizedBox(width: 6),
 
                     GestureDetector(
-                      onTap: () {},
+                      onTap: widget.onTap,
                       child: const Text(
                         'Register Now',
                         style: TextStyle(
