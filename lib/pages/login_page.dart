@@ -13,6 +13,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
 
   final emailTextController = TextEditingController();
+
   final passwordTextController = TextEditingController();
 
   @override
@@ -40,10 +41,7 @@ class _LoginPageState extends State<LoginPage> {
                 Text(
                   'Welcome back, broski!',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.w200,
-                  ),
+                  style: TextStyle(fontWeight: FontWeight.w400),
                 ),
             
                 SizedBox(height: 25),
