@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sosmed_app/components/button.dart';
 import 'package:sosmed_app/components/text_field.dart';
 
 class LoginPage extends StatefulWidget {
@@ -13,7 +14,6 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
 
   final emailTextController = TextEditingController();
-
   final passwordTextController = TextEditingController();
 
   @override
@@ -25,10 +25,8 @@ class _LoginPageState extends State<LoginPage> {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25.0),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-            
-                SizedBox(height: 50),
-            
                 // Logo
                 Icon(
                   Icons.lock,
@@ -39,9 +37,10 @@ class _LoginPageState extends State<LoginPage> {
             
                 // Welcome Back Msg
                 Text(
-                  'Welcome back, broski!',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontWeight: FontWeight.w400),
+                  'Welcome Back, Broski!',
+                  style: TextStyle(
+                    color: Colors.grey[700]
+                  ),
                 ),
             
                 SizedBox(height: 25),
@@ -62,11 +61,41 @@ class _LoginPageState extends State<LoginPage> {
                   obscureText: true,
                 ),
 
-                SizedBox(height: 10),
+                SizedBox(height: 25),
             
                 // Sign In Btn
+                MyButton(
+                  onTap: () {},
+                  text: 'Sign In',
+                ),
+
+                SizedBox(height: 25),
             
-                // Register Btn
+                // Register Page
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Not a member?',
+                      style: TextStyle(
+                        color: Colors.grey[700]
+                      ),
+                    ),
+
+                    const SizedBox(width: 6),
+
+                    GestureDetector(
+                      onTap: () {},
+                      child: const Text(
+                        'Register Now',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.lightBlue,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
             
               ],
             ),

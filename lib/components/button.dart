@@ -15,13 +15,19 @@ class MyButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
         color: Colors.grey[700],
+        borderRadius: BorderRadius.circular(8)
       ),
       child: Center(
         child: Text(
           text,
-          style: const TextStyle(color: Colors.white),
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w700,
+            fontSize: 14,
+          ),
         ),
       ),
     );
