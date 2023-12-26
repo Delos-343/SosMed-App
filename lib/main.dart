@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/register_page.dart';
+import 'package:sosmed_app/auth/login_or_register.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: 'Raleway',
       ),
-      home: const RegisterPage(),
+      home: const LoginOrRegister(),
     );
   }
 }
