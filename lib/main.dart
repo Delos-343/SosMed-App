@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sosmed_app/auth/login_or_register.dart';
+import 'package:sosmed_app/auth/auth.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,12 +13,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'SosMed App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
         fontFamily: 'Raleway',
       ),
-      home: const LoginOrRegister(),
+      home: const AuthPage(),
     );
   }
 }
