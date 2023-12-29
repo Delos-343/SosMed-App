@@ -66,7 +66,3 @@ class DefaultFirebaseOptions {
     iosBundleId: 'com.example.sosmedApp',
   );
 }
-
-await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-);
