@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "110264498100",
+    "project_id": "sosmed-flutter",
+    "storage_bucket": "sosmed-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110264498100:android:191f92b1d112f2ab9f24e1",
+        "android_client_info": {
+          "package_name": "com.example.sosmed_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYW7bCPzb3DNIogZN3kcZ5xHAjImfKSrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
